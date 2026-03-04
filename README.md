@@ -28,31 +28,15 @@
 
 <div align="center">
 
-<!-- 
-  ✅ HOW TO ADD YOUR DEMO VIDEO:
+### 🎬 Project Demo Video
 
-  OPTION 1 — YouTube (Recommended):
-  1. Upload your demo video to YouTube
-  2. Replace YOUR_VIDEO_ID below with your YouTube video ID
-  3. Uncomment the line below
+<div align="center">
 
-  [![Watch Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Watch Demo](https://img.shields.io/badge/▶%20Watch%20Demo-Insurance%20Fraud%20Detection-red?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/18O2xrI04LSlY1sLCcQoVXIfWGBcBs09H/view?usp=sharing)
 
-  OPTION 2 — GitHub (for short videos under 100MB):
-  1. Go to your GitHub repo → Issues → New Issue
-  2. Drag and drop your video file into the comment box
-  3. Copy the generated URL and paste it below
+> 📌 **Click the button above** to watch the full project demo on Google Drive
 
-  ![Demo Video](YOUR_GITHUB_VIDEO_URL)
-
-  OPTION 3 — Google Drive:
-  1. Upload video to Google Drive → Share → Anyone with link
-  2. Replace YOUR_FILE_ID with your file ID from the share link
-
-  [![Watch Demo](https://drive.google.com/thumbnail?id=YOUR_FILE_ID)](https://drive.google.com/file/d/YOUR_FILE_ID/view)
--->
-[![Watch Demo](demo_preview.png)](https://drive.google.com/file/d/18O2xrI04LSlY1sLCcQoVXIfWGBcBs09H/view?usp=sharing)
-### 🎬 Click Here to Watch the Full Project Demo
+</div>
 
 </div>
 
