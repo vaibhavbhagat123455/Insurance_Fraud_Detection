@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Auto Insurance Claims</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+/* NAVBAR */
+
+header{
+background:#1c1c1c;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+}
+
+header h2{
+letter-spacing:2px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-size:15px;
+}
+
+nav a:hover{
+color:#ffb400;
+}
+
+.predict-btn{
+border:2px solid #ffb400;
+padding:6px 15px;
+border-radius:4px;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:500px;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url("static/hero.jpg");
+
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:45px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+width:60%;
+margin:auto;
+}
+
+/* ABOUT SECTION */
+
+.about-section{
+padding:80px 80px;
+display:flex;
+gap:40px;
+align-items:center;
+}
+
+.about-img{
+flex:1;
+}
+
+.about-img img{
+width:100%;
+border-radius:6px;
+}
+
+.about-content{
+flex:1;
+}
+
+.about-box{
+margin-bottom:25px;
+}
+
+.about-box h3{
+color:#333;
+margin-bottom:5px;
+}
+
+.about-box p{
+color:#666;
+font-size:14px;
+}
+
+/* FORM SECTION */
+
+.form-section{
+padding:60px;
+background:white;
+margin:40px auto;
+width:90%;
+border-radius:6px;
+}
+
+.form-section h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+}
+
+.grid input{
+padding:10px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:25px;
+background:#2e7d32;
+color:white;
+border:none;
+border-radius:4px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1b5e20;
+}
+
+/* RESULT */
+
+.result{
+text-align:center;
+font-size:22px;
+margin-top:20px;
+}
+
+.result span{
+color:#7b1fa2;
+font-weight:bold;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+padding:40px;
+}
+
+.contact h2{
+margin-bottom:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+<h2>AUTO INSURANCE CLAIMS.</h2>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a href="#predict" class="predict-btn">Predict</a>
+
+</nav>
+
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div>
+
+<h1>Insurance Claims</h1>
+
+<p>
+Insurance Fraud Detection can be prevented by analyzing
+previous Fraud Data and detecting trends.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+
+<section id="about" class="about-section">
+
+<div class="about-img">
+
+<img src="static/fraud.png" alt="Fraud detection concept image">
+
+</div>
+
+<div class="about-content">
+
+<div class="about-box">
+
+<h3>Data Collection and Preprocessing</h3>
+
+<p>
+The first step involves collecting insurance data and preprocessing it
+to handle missing values, categorical data and inconsistencies.
+</p>
+
+</div>
+
+<div class="about-box">
+
+<h3>Feature Engineering and Model Selection</h3>
+
+<p>
+Selecting relevant features and transforming them into a format suitable
+for machine learning algorithms such as KNN, Naive Bayes, Decision Trees,
+Random Forest or SVM.
+</p>
+
+</div>
+
+<div class="about-box">
+
+<h3>Model Training and Evaluation</h3>
+
+<p>
+Training the selected model using the processed data and evaluating its
+performance using accuracy, precision, recall and F1 score.
+</p>
+
+</div>
+
+<div class="about-box">
+
+<h3>Model Deployment</h3>
+
+<p>
+Deploying the trained machine learning model in a real-world scenario
+to detect fraud insurance claims.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PREDICTION FORM -->
+
+<section id="predict" class="form-section">
+
+<h2>Insurance Fraud Detection</h2>
+
+<form action="/predict" method="POST">
+
+<div class="grid">
+
+<input name="months_as_customer" placeholder="months_as_customer">
+
+<input name="policy_number" placeholder="policy_number">
+
+<input name="policy_bind_date" placeholder="policy_bind_date">
+
+<input name="policy_state" placeholder="policy_state">
+
+<input name="policy_csl" placeholder="policy_csl">
+
+<input name="policy_deductable" placeholder="policy_deductable">
+
+<input name="policy_annual_premium" placeholder="policy_annual_premium">
+
+<input name="insured_zip" placeholder="insured_zip">
+
+<input name="insured_sex" placeholder="insured_sex">
+
+<input name="insured_occupation" placeholder="insured_occupation">
+
+<input name="insured_hobbies" placeholder="insured_hobbies">
+
+<input name="insured_relationship" placeholder="insured_relationship">
+
+<input name="capital_gains" placeholder="capital_gains">
+
+<input name="capital_loss" placeholder="capital_loss">
+
+<input name="incident_date" placeholder="incident_date">
+
+<input name="incident_type" placeholder="incident_type">
+
+<input name="collision_type" placeholder="collision_type">
+
+<input name="incident_severity" placeholder="incident_severity">
+
+<input name="authorities_contacted" placeholder="authorities_contacted">
+
+<input name="incident_location" placeholder="incident_location">
+
+<input name="incident_hour_of_the_day" placeholder="incident_hour_of_the_day">
+
+<input name="number_of_vehicles_involved" placeholder="number_of_vehicles_involved">
+
+<input name="property_damage" placeholder="property_damage">
+
+<input name="bodily_injuries" placeholder="bodily_injuries">
+
+<input name="witnesses" placeholder="witnesses">
+
+<input name="police_report_available" placeholder="police_report_available">
+
+<input name="total_claim_amount" placeholder="total_claim_amount">
+
+<input name="auto_make" placeholder="auto_make">
+
+<input name="auto_model" placeholder="auto_model">
+
+<input name="auto_year" placeholder="auto_year">
+
+</div>
+
+<button type="submit">Submit</button>
+
+</form>
+
+
+<div class="result">
+
+The Insurance Fraud Detection Status:
+
+<span>{{ prediction_text }}</span>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>Email : support@insurancefraud.com</p>
+
+</section>
+
+
+</body>
+</html>
