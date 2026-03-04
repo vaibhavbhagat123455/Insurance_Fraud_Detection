@@ -51,8 +51,7 @@
 
   [![Watch Demo](https://drive.google.com/thumbnail?id=YOUR_FILE_ID)](https://drive.google.com/file/d/YOUR_FILE_ID/view)
 -->
-
-[![Watch Demo](thumbnail)]([your_video_link](https://drive.google.com/file/d/18O2xrI04LSlY1sLCcQoVXIfWGBcBs09H/view?usp=sharing))
+[![Watch Demo](demo_preview.png)](https://drive.google.com/file/d/18O2xrI04LSlY1sLCcQoVXIfWGBcBs09H/view?usp=sharing)
 ### 🎬 Click Here to Watch the Full Project Demo
 
 </div>
